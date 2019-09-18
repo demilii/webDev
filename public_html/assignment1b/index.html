@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class = "header"><span><img src="img/icon.png"></img>
+		<b>A Bite Of China</b></span>
+	</div>
+	<div class = navbar>
+		<a class="home" href="index.html">Home</a>
+		<a class="ct" href="ct.html">Cantonese Cuisine</a>
+		<a class="sc" href="sc.html">Sichuan Cuisine</a>
+		<a class="ot" href="others.html">Others</a>
+		<a class="contact" href="contact.html">Contact</a>
+	</div>
+
+	<div class = "content">
+		<div id = "intro">A Bite of China is a famous documentary for Chinese food. This website will introduce the eight cuisin in China. The below video is a cut from the documentary A Bite of China.
+			<iframe src="https://www.youtube.com/embed/himivpCnRCU" width = "85%" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>© 2019 Yinmiao Li</p>
+	</div>
+
+	<div id = "home"><a href = "https://i6.cims.nyu.edu/~yl4121/index.html"><img src ="img/home.png"></img></a></div>
+	<script type="text/javascript">
+	setInterval(resizeIframe, 200);
+	function resizeIframe(){
+		if(document.querySelector("iframe").clientWidth){
+			document.querySelector("iframe").height = document.querySelector("iframe").clientWidth*0.6 +'px';}
+		}
+
+		</script>
+	</body>
+	</html>

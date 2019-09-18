@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro</title>
+	<link rel="stylesheet" type="text/css" href="style4.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class = "header">
+		<span><img src="img/icon.png" /><b> Contact Us</b></span>
+	</div>
+	<div class = "navbar">
+
+		<a class="home" href="index.html">Home</a>
+		<a class="ct" href="ct.html">Cantonese Cuisine</a>
+		<a class="sc" href="sc.html">Sichuan Cuisine</a>
+		<a class="ot" href="others.html">Others</a>
+		<a class="contact" href="contact.html">Contact</a>
+
+	</div>
+	<div id = "content">
+		<br>
+		<center><p>Do you want to record your personal information?</center></p>
+		<center><button onclick = "display()">Yes
+		</button><br></center>
+		<center><button onclick = "disappear()">No
+		</button></center>
+		<br>
+		<form action = "mailto:yl4121@nyu.edu">
+
+			<div  id = "p_info">
+				<fieldset>
+					<legend> Personal Info: </legend>
+					<label for = "name"> Name: </label>
+					<input type = "text" value = "First Name, Last Name" name = "fullname" id = "fullname" />
+					<br>
+					<p>
+						<label for = "birthday"> Birthday: </label>
+						<input type = "date" name ="bday" />
+					</p>
+					<label for = "email"> Email: </label>
+					<input type = "email" name = "email" id = "email" />
+					<br><br>
+					<label for = "msg"> Message: </label>
+					<textarea id = "msg" name = "user_message"></textarea>
+					<div class = "button">
+						<button type ="submit">Send your message
+						</button>
+					</div>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset>
+					<legend> Survey: </legend>
+					<div class = "preference">
+						<label for = "enjoy"> Do you enjoy viewing the website? </label>
+						<input type = "checkbox" name = "enjoy" id = "enjoy" />
+					</div>
+					<p>What color do you think suit for this website:
+						<input type = "color" name = "color" />
+					</p>
+					<p>Which cuisine do you like:
+						<select name = "cuisine">
+							<option value = "val1" selected>Cantonese</option>
+							<option value = "val2">Sichuan</option>
+							<option value = "val3">Anhui</option>
+							<option value = "val4">Shandong</option>
+							<option value = "val5">Fujian</option>
+							<option value = "val6">Jiangsu</option>
+							<option value = "val7">Hunan</option>
+							<option value = "val8">Zhejiang</option>
+						</select>
+					</p>
+					<p>What score would you rate for the website? (between 1 and 10):
+						<input type = "number" name = "score" min = "1" max = "10"></input>
+					</p>
+					<p>Will you share the website to your friends?
+					</p>
+					<div>
+						<input type = "radio" id = "def" name = "evaluation" checked />
+						<label for = "def">Definitely</label>
+					</div>
+					<div>
+						<input type = "radio" id = "maybe" name = "evaluation" />
+						<label for = "maybe">Maybe</label>
+					</div>
+					<div>
+						<input type = "radio" id = "no" name = "evaluation" />
+						<label for = "def">No</label>
+					</div>
+					<p>
+						<label for = 'comments'>Comments: </label>
+						<textarea auto></textarea>
+					</p>
+					<div class = "button">
+						<button type ="submit">Submit
+						</button>
+					</div>
+				</fieldset>
+			</div>
+		</form>
+	</div>
+
+	<div class="footer">
+		<p>© 2019 Yinmiao Li</p>
+	</div>
+	<script>
+	function display(){
+		document.getElementById("p_info").style.display = "block";
+	}
+	function disappear(){
+		document.getElementById("p_info").style.display = "none";
+	}
+	</script>
+</body>
+
+</html>
